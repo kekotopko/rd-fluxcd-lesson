@@ -4,5 +4,7 @@ metadata:
   name: dragonfly
   namespace: production
 spec:
-  replicas: 2
   image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
+  replicas: 2
+  args:
+    - --logtostderr
