@@ -3,8 +3,4 @@ kind: Dragonfly
 metadata:
   name: dragonfly
 spec:
-  image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
   replicas: 1
-  command:
-    - dragonfly
-    - --logtostderr
