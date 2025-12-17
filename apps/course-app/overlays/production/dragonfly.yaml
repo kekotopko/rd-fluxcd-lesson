@@ -5,4 +5,4 @@ metadata:
   namespace: production
 spec:
   replicas: 2
-  image: docker.dragonflydb.io/dragonflydb/dragonfly:v1.17.0
+  image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
