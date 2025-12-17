@@ -6,5 +6,6 @@ metadata:
 spec:
   image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
   replicas: 2
-  args:
+  command:
+    - dragonfly
     - --logtostderr
