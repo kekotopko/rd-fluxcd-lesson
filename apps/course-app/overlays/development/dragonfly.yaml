@@ -4,4 +4,4 @@ metadata:
   name: dragonfly
 spec:
   replicas: 1
-  image: docker.dragonflydb.io/dragonflydb/dragonfly:v1.16.0
+  image: docker.dragonflydb.io/dragonflydb/dragonfly:v1.18.0
