@@ -43,11 +43,9 @@ spec:
             failureThreshold: 3
 
           startupProbe:
-            tcpSocket:
-              port: 6379
-            initialDelaySeconds: 5
-            periodSeconds: 5
-            failureThreshold: 30
+            httpGet:
+              path: /healthz
+              port: 8080
 
       strategy:
         type: RollingUpdate
