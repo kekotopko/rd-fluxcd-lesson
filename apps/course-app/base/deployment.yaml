@@ -42,6 +42,13 @@ spec:
             timeoutSeconds: 2
             failureThreshold: 3
 
+          startupProbe:
+            tcpSocket:
+              port: 6379
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 30
+
       strategy:
         type: RollingUpdate
         rollingUpdate:
